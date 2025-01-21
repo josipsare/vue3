@@ -1,4 +1,4 @@
-<!-- ProductCard.vue -->
+
 <template>
   <div class="product-card">
     <h3>{{ product.name }}</h3>

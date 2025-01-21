@@ -81,7 +81,7 @@ export const useProductStore = defineStore('product', {
               "price": 199
             }
           ];
-          console.log("Fetched products:", this.products); // Provjera jesu li podaci ispravno postavljeni
+          console.log("Fetched products:", this.products);
           resolve();
         }, 1000);
       });

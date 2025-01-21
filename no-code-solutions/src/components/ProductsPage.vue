@@ -30,7 +30,7 @@ export default {
     };
   },
   computed: {
-    // Koristi store za dohvat proizvoda
+
     products() {
       const productStore = useProductStore();
       return productStore.products;
@@ -39,16 +39,16 @@ export default {
   methods: {
     async fetchProducts() {
       const productStore = useProductStore();
-      await productStore.fetchProducts(); // Asinkroni poziv za dohvat proizvoda iz store-a
+      await productStore.fetchProducts();
       this.loading = false;
     },
     addToCart(product) {
       const cartStore = useCartStore();
-      cartStore.addItemToCart(product); // Korištenje ispravne metode addItemToCart
+      cartStore.addItemToCart(product);
       alert(`${product.name} added to cart!`);
     },
     viewProductDetails(productId) {
-      this.$router.push(`/products/${productId}`); // Navigate to product details
+      this.$router.push(`/products/${productId}`);
     }
   },
   mounted() {
