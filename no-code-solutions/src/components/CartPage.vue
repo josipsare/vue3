@@ -9,7 +9,6 @@
     <div v-else>
       <div v-for="(item, index) in cartItems" :key="item.id" class="cart-item">
         <div class="cart-item-details">
-          <img :src="item.image" alt="Product Image" class="cart-item-image" />
           <div>
             <h3>{{ item.name }}</h3>
             <p>{{ item.description }}</p>
